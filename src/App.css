@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #0c1c2e;
 }
 
 .App-logo {
@@ -35,4 +36,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0c1c2e;
+}
+.drag-area{
+  border: 2px dashed #90cafa;
+  height: 500px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 2px solid #90cafa;
+}
+.drag-area .icon{
+  font-size: 100px;
+  color: #fff;
+}
+.drag-area header{
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+.drag-area span{
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+.drag-area button{
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #5256ad;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drag-area input {
+  padding: 40px 35px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: #0f2136;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 50px 0;
+}
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.show-img-btn {
+  margin: 26px  
 }
